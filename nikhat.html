@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nikhat Akbar — Portfolio</title>
+  <meta name="description" content="Nikhat Akbar — CSE undergrad. Portfolio: projects, skills, resume, achievements, contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#9aa7bd;
+      --accent:#7c3aed; /* purple */
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #071124 100%);color:#e6eef8}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+
+    /* header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:86px;height:86px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:grid;place-items:center;font-weight:800;font-size:28px;color:var(--card);box-shadow:0 6px 20px rgba(124,58,237,0.18)}
+    h1{margin:0;font-size:24px;letter-spacing:0.2px}
+    .subtitle{color:var(--muted);font-size:13px;margin-top:6px}
+
+    /* layout */
+    main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:26px}
+
+    /* left column cards */
+    .card{background:linear-gradient(180deg,var(--glass),transparent);border-radius:var(--radius);padding:20px;backdrop-filter:blur(6px);box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    .intro{display:flex;flex-direction:column;gap:8px}
+    .cta-row{display:flex;gap:12px;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:12px;font-weight:600;border:1px solid rgba(255,255,255,0.06);cursor:pointer;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#06b6d4);color:#071124;border:none}
+
+    /* skills */
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .skill{font-size:13px}
+    .meter{height:10px;background:var(--glass-2);border-radius:999px;overflow:hidden;margin-top:6px}
+    .meter > i{height:100%;display:block;border-radius:999px}
+
+    /* projects */
+    .projects{display:grid;gap:12px;margin-top:12px}
+    .project{display:flex;gap:12px;align-items:flex-start}
+    .proj-thumb{width:84px;height:64px;border-radius:10px;background:linear-gradient(135deg,#12212e,#0b1724);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+
+    /* right column */
+    .side {position:sticky;top:28px;display:flex;flex-direction:column;gap:14px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .chip{display:flex;align-items:center;gap:10px;padding:10px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+
+    /* resume */
+    .resume {display:flex;flex-direction:column;gap:8px}
+    .resume-row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+
+    /* achievements */
+    .achievements{display:grid;gap:10px}
+    .achievement{padding:10px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.02)}
+
+    /* footer */
+    footer{text-align:center;color:var(--muted);margin-top:28px;font-size:13px}
+
+    /* utilities */
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:12px;border:1px solid rgba(255,255,255,0.03)}
+
+    /* responsive */
+    @media (max-width:980px){main{grid-template-columns:1fr} .side{position:static}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">NA</div>
+        <div>
+          <h1>Nikhat Akbar</h1>
+          <div class="subtitle">CSE Undergraduate — Building web & ML experiments</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:12px;align-items:center">
+        <a class="tag" href="#projects">Projects</a>
+        <a class="tag" href="#skills">Skills</a>
+        <a class="tag" href="#resume">Resume</a>
+        <a class="tag" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card intro">
+          <h2 style="margin:0">About</h2>
+          <p class="muted" style="margin-top:8px">I am Nikhat Akbar, a Computer Science undergrad focused on full‑stack web development, practical machine learning experiments, and clean UI/UX. I enjoy turning ideas into small projects and learning new technologies every month.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Hire / Collaborate</a>
+            <a class="btn" href="nikhat's resume.pdf">Download Resume</a>
+            <a class="btn" href="#projects">See Projects</a>
+          </div>
+
+          <div style="margin-top:18px">
+            <h3 style="margin:0">Key info</h3>
+            <div style="display:flex;gap:12px;margin-top:10px;flex-wrap:wrap">
+              <div class="chip">🎓 CSE — BTech</div>
+              <div class="chip">📍 India</div>
+              <div class="chip">🕒 Available for internships</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 style="margin:0">Skills</h3>
+          <div id="skills" class="skills">
+            <div>
+              <div class="skill">HTML & CSS <span class="muted" style="float:right">90%</span></div>
+              <div class="meter" aria-hidden><i style="width:90%;background:linear-gradient(90deg,var(--accent),#06b6d4)"></i></div>
+
+              <div class="skill" style="margin-top:10px">JavaScript <span class="muted" style="float:right">75%</span></div>
+              <div class="meter"><i style="width:75%;background:linear-gradient(90deg,#06b6d4,var(--accent))"></i></div>
+
+              <div class="skill" style="margin-top:10px">Python <span class="muted" style="float:right">70%</span></div>
+              <div class="meter"><i style="width:70%;background:linear-gradient(90deg,var(--accent),#06b6d4)"></i></div>
+            </div>
+
+            <div>
+              <div class="skill">React.js <span class="muted" style="float:right">65%</span></div>
+              <div class="meter"><i style="width:65%;background:linear-gradient(90deg,#06b6d4,var(--accent))"></i></div>
+
+              <div class="skill" style="margin-top:10px">DSA & Algorithms <span class="muted" style="float:right">60%</span></div>
+              <div class="meter"><i style="width:60%;background:linear-gradient(90deg,var(--accent),#06b6d4)"></i></div>
+
+              <div class="skill" style="margin-top:10px">Git & CI <span class="muted" style="float:right">55%</span></div>
+              <div class="meter"><i style="width:55%;background:linear-gradient(90deg,#06b6d4,var(--accent))"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px" id="projects">
+          <h3 style="margin:0">Selected Projects</h3>
+          <div class="projects">
+            <div class="project">
+              <div class="proj-thumb">P1</div>
+              <div>
+                <div style="font-weight:700">College Community Hub</div>
+                <div class="muted" style="font-size:13px">Features: auth, posts, chat, file upload, AI notes — built with React & Firebase</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="proj-thumb">P2</div>
+              <div>
+                <div style="font-weight:700">SmartBridge Pay (Hackathon)</div>
+                <div class="muted" style="font-size:13px">AI + Blockchain payment prototype. Role: frontend and demo PPT.</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="proj-thumb">P3</div>
+              <div>
+                <div style="font-weight:700">Mini ML Experiments</div>
+                <div class="muted" style="font-size:13px">Small models and data pipelines for image classification and basic NLP tasks.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px" id="achievements">
+          <h3 style="margin:0">Achievements</h3>
+          <div class="achievements">
+            <div class="achievement">🏆 Hackathon finalist — SmartBridge Pay</div>
+            <div class="achievement">🏆 2nd Runner-up in TechnoSphere'25</div>
+            <div class="achievement">📜 Dean's list (semester)</div>
+            <div class="achievement">🔗 Built and shipped College Community Hub MVP</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px" id="resume">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3 style="margin:0">Resume</h3>
+              <div class="muted" style="font-size:13px">Download a PDF version of my resume.</div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <a class="btn" href="#" download="Nikhat_Akbar_Resume.pdf">Download</a>
+              <a class="btn btn-primary" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="side">
+        <div class="card contact-card" id="contact">
+          <h3 style="margin:0">Contact</h3>
+          <p class="muted" style="margin-top:8px">Want to work together? Send a quick message — I usually reply within a few days.</p>
+          <div class="contact-list" style="margin-top:8px">
+            <div class="chip">✉️ email: <a href="mailto:nikhat@example.com">nikhatakbar8@gmail.com</a></div>
+            <div class="chip">📱 phone: <a href="tel:+910000000000">+91 9515228533</a></div>
+            <div class="chip">🔗 LinkedIn: <a href="https://www.linkedin.com/in/nikhat-akbar-b61330301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nikhat's LinkedIn</a></div>
+            <div class="chip">🐱 GitHub: <a href="https://github.com/nikhatakbar16">Nikhat's Github</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0">Quick Links</h4>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+            <a class="chip" href="#projects">Projects</a>
+            <a class="chip" href="#achievements">Achievements</a>
+            <a class="chip" href="#skills">Skills</a>
+            <a class="chip" href="#resume">Resume</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0">Education</h4>
+          <div class="muted" style="margin-top:8px;font-size:13px">BTech, Computer Science — Current
+            <div style="font-size:13px;margin-top:8px">Expected graduation: 2028</div>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      Built by Nikhat Akbar • Designed for clarity and fast hiring. 
+    </footer>
+  </div>
+</body>
+</html>
